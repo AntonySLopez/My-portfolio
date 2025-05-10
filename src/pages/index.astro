@@ -1,15 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import Tecnologias from '../components/Tecnologias.astro';
+import SkillHeader from '../components/SkillHeader.astro';
 import NabVar from '../components/NabVar.astro';
+import Main from '../layouts/Main.astro'
+import Proyectos from '../components/Proyectos.astro'
+import Contactos from '../components/Contactos.astro'
+import SkillMain from '../components/SkillMain.astro'
+import Logo from '../components/Objetos/Logo.astro'
+import Footer from '../components/Footer.astro'
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Header></Header>
-	<Tecnologias></Tecnologias>
+	<SkillHeader></SkillHeader>
 	<NabVar></NabVar>
+	<Main>
+		<Proyectos></Proyectos>
+	</Main>
+	<SkillMain></SkillMain>
+	<Logo></Logo>
+	<Contactos></Contactos>
+	<Footer></Footer>
+
 </Layout>
